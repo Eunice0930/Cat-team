@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>品瑄的網頁</title>
+  </head>
+  <body>
+    <!-- <header>讓工程師知道這是表頭，沒有實際作用 -->
+    <header>
+      <h1 style="text-align: center">品瑄</h1>
+      <img
+        width="100%"
+        src="https://shoplineimg.com/6641ba368261270042931b84/6659a5a17a5953a3ad1c33dd/2160x.png"
+      />
+    </header>
+    <!-- <main>主要程式存放的地方，一樣是給工程師好辨識，且一個html只能出現一次 -->
+    <main>
+      <a href="https://www.google.com" target="_blank">
+        <img width="100" src="pinxuan.jpeg" alt="品瑄的圖" />
+      </a>
+      <strong>
+        <h3>條列式</h3>
+        <ul>
+          <li>第一個</li>
+          <li>第二個</li>
+        </ul>
+      </strong>
+      <!-- <P>會推開前後(上下)元素 -->
+      <p>
+        <span>簡介</span>
+        <span>:</span>
+      </p>
+      <!-- <div>不會推開前後元素 -->
+      <div>
+        學歷
+        <li>南台科大<small>09xxxxxxxx</small></li>
+      </div>
+      行事曆:
+      <table border="1" style="width: 100%">
+        <thead>
+          <tr>
+            <th>項目</th>
+            <th>上午</th>
+            <th>中午</th>
+            <th>下午</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>專業能力</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>飲食計畫</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>結論</td>
+            <td colspan="3">還沒下結論</td>
+          </tr>
+        </tfoot>
+      </table>
+      <form action="">
+        <input type="text" placeholder="請輸入姓名" />
+        <input type="number" placeholder="請輸入年齡" />
+        <input type="tel" placeholder="請輸入電話" />
+        <input type="password" placeholder="請輸入pwd" />
+        <input type="email" placeholder="請輸入email" />
+        <div>
+          單選
+          <label><input type="radio" name="repeat" />是</label>
+          <label><input type="radio" name="repeat" />否</label>
+        </div>
+        <div>
+          複選
+          <label><input type="checkbox" name="flower" />銀杏花</label>
+          <label><input type="checkbox" name="flower" />石蒜花</label>
+          <label><input type="checkbox" name="flower" />金銀花</label>
+          <label><input type="checkbox" name="flower" />玫瑰花</label>
+        </div>
+        <div>
+          備註
+          <textarea name="" id=""></textarea>
+        </div>
+        <div>
+          下拉式選單
+          <select name="" id="">
+            <option value="TW">台灣</option>
+            <option value="JP">日本</option>
+            <option value="US">美國</option>
+            <option value="CN">中國</option>
+          </select>
+        </div>
+        <button>送出</button>
+      </form>
+    </main>
+  </body>
+</html>
