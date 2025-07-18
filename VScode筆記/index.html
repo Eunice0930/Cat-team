@@ -5,20 +5,34 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>VScode終端機輸入&基本筆記</title>
+  <link rel="stylesheet" href="./style.css">
+  <!-- 連結style.css這個css檔案 -->
 </head>
 
 <header>
-  <a href="https://www.w3schools.com/">w3schools</a>
-  <!-- 重要學習/參考網站 -->
+  <!-- css 連結 .header 用標籤 -->
 
-  <nav>
-    <ul>
-      <li><a href="index.html">首頁</a></li>
-      <li><a href="about.html">關於我們</a></li>
-      <li><a href="services.html">服務介紹</a></li>
-      <li><a href="contact.html">聯絡我們</a></li>
-    </ul>
-  </nav>
+  <div class="class1">
+    <!-- class="class1 class2" 同時有class1和class2兩個class -->
+    <a href="https://www.w3schools.com/">w3schools</a>
+    <!-- 重要學習/參考網站 -->
+  </div>
+
+
+  <div id="id2">
+
+    <nav>
+      <ul>
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="about.html">關於我們</a></li>
+        <li><a href="services.html">服務介紹</a></li>
+        <li><a href="contact.html">聯絡我們</a></li>
+      </ul>
+    </nav>
+
+  </div>
+
+
 
   <img src="./貓2.jpg" width="100%" />
 </header>
@@ -33,7 +47,7 @@
     <!-- border="1" 邊框粗度1 -->
     <thead>
       <!--  <thead> 語意化標籤 沒有實際作用 -->
-      <tr>
+      <tr class="red">
         <th>tr1/th1</th>
         <th>tr1/th2</th>
         <th>tr1/th3</th>
@@ -42,12 +56,12 @@
 
     <tbody>
       <!--  <tbody> 語意化標籤 沒有實際作用 -->
-      <tr>
-        <th>tr2/th1</th>
+      <tr class="blue">
+        <th class="blue-text">tr2/th1</th>
         <th>tr2/th2</th>
         <th>tr2/th3</th>
       </tr>
-      <tr>
+      <tr class="green green-text">
         <td>tr3/td1</th>
         <td>tr3/td2</th>
         <td>tr3/td3</th>
@@ -109,7 +123,7 @@
 
 
 
-    <button>button</button>
+    <button class="btn">button</button>
     <!-- <button></button>按鈕 -->
 
   </form>
@@ -119,8 +133,8 @@
   <div class="" id="" style="color: black">
     <!-- 
             class="標籤/群組"
+            class="class1 class2" 同時有class1和class2兩個class
             id="tag用專有名字/編碼" 
-            style="" 
         -->
   </div>
   <strong>
@@ -170,7 +184,21 @@
   <!-- <br> 下一行 -->
 
   <a href="https://images.pexels.com/photos/2071873/pexels-photo-2071873.jpeg?_gl=1*1mdycxs*_ga*NjM4MjgyMDk4LjE3NTA5NDM2ODY.*_ga_8JE65Q40S6*czE3NTIxMTU5OTEkbzckZzEkdDE3NTIxMTY0NDIkajYwJGwwJGgw"
-    alt="貓">貓的連結</a>
+    alt="貓" class="rainbow-linear-gradient">貓的連結</a>
+
+  <div class="massage"> message </div>
+
+  <div class="box1">.box1-1 .box1-1 .box1-1</div>
+  <div class="box1">.box1-2</div>
+  <div class="box1">.box1-3</div>
+
+  <div class="box2">.box2-1</div>
+  <div class="box2">.box2-2</div>
+  <div class="box2">.box2-3</div>
+
+  <div class="massage2" onclick="this.classList.toggle('moved')"> message </div>
+  <!-- onclick="this.classList.toggle('moved')" 是 JavaScript 
+   onclick 點擊  toggle 觸發加入/移除 moved 這個class -->
 
   <!--    
     設定 Git 全域使用者名稱（commit 會用這個名字）
